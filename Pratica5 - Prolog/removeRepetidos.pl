@@ -1,3 +1,5 @@
+/* Escreva um programa que receba uma lista de inteiros positivos, em seguida imprime a mesma lista sem elementos repetidos. */
+
 retirar_todas(_,[],[]).
 retirar_todas(Elem,[Elem|Cauda],L) :- retirar_todas(Elem,Cauda,L).
 retirar_todas(Elem,[Elem1|Cauda], [Elem1|Cauda1]) :- Elem \== Elem1, retirar_todas(Elem,Cauda,Cauda1).
